@@ -1,0 +1,102 @@
+*{
+	font-family: "微软雅黑";
+	margin : 0px;
+	padding: 0px;
+}
+a:link {color: whitesmoke; }	
+a:visited {color: #00FF00;}	
+a:hover {color: #FF0000;}
+a{
+	text-decoration:none;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: top center;
+	background-color: aquamarine;
+	background-image:url(../img/snake.jpg);
+	background-repeat: no-repeat;
+}
+#change{
+	text-align: center;
+	width: 80px;
+	background-color: pink;
+	border-radius: 8px;
+	margin: 150px auto 50px auto ;
+}
+#stop{
+	text-align: center;
+	width: 100px;
+	height: 50px;
+	background-color: pink;
+	border-radius: 6px;
+	/*margin-left: 250px;*/
+	margin: 0px auto auto 250px;
+	float: left;
+}
+#newgame{
+	text-align: center;
+	width: 100px;
+	height: 50px;
+	background-color: pink;
+	border-radius: 6px;
+	margin: 0px 20px auto 500px;
+	float: left;
+}
+#maxtext{
+	color: yellow;
+	text-align: center;
+	font-size: 80px;
+	margin: 10px 100px 10px 5px;
+	width: 200px;
+	height: 100px;
+}
+#maxscore {
+	text-align: center;
+	color: red;
+	width: 200px;
+	height: 300px;
+	float: right;
+	margin: 100px 250px 100px 10px;
+}
+#level{
+	width: 180px;
+	height: 300px;
+	float: left;
+	margin: 100px 0px 100px 300px;
+}
+#scoretext{
+	color: red;
+	font-size: 40px;
+}
+#scoretitle{
+	font-size: 40px;
+}
+#score{
+	margin: 50px auto auto 20px;
+	text-align: center;
+	
+}
+#cvs{
+	float: left;
+}
+.foodbox{
+	position: absolute;
+	float: left;
+}
+.box{
+	left: 50%;
+	top: 50%;
+	border: 20px solid  whitesmoke ;
+	border-radius: 20px;
+	width:450px;
+	height: 450px;
+	background-color:lightblue;
+	margin: 20px auto;
+}
+#panel{
+	margin: 20px auto;
+	width: 100%;
+	height: 100%;
+}

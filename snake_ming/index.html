@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<!--
+    	作者：Panweiming
+    	时间：2017-07-12
+    	描述：js版本贪吃蛇
+    -->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="mingsnake">
+		<meta name="description" content="贪吃蛇大作战">
+		<title>贪吃蛇大作战</title>
+		<link rel="stylesheet" href="css/ui.css" />
+	</head>
+	<!-- h5 canvas-->
+	<body >
+		<audio src="music/gamestart.mp3" id = "gameStartAudio"  autoplay="true" loop="true"></audio>
+			<audio src="music/gameover.mp3" id = "gameOverAudio"  ></audio>
+			<audio src="music/gameeat.mp3" id = "gameEatAudio" start="" ></audio>
+			<div id = "score"><span id = "scoretitle"> Score:&nbsp;</span><span id = "scoretext">0</span></div>
+		<div id = "panel">
+			<div id = "level">
+				<p style="margin: 20px auto 0px 20px;word-spacing:45px">难度: 边界:    </p>
+				<div style="float: left;">
+				<table style=" border-spacing:15px ">
+					<tr><td><input type="radio" id = "difficult"	name = "levelname" value="50" onclick="setdifficult()">&nbsp;&nbsp;大师</td></tr>
+					<tr><td><input type="radio" id = "general" name = "levelname" value="100" onclick="setgeneral()">&nbsp;&nbsp;普通</td></tr>
+					<tr><td><input type="radio" id = "nood"  checked="checked"  name = "levelname" value="200" onclick="setnood()" >&nbsp;&nbsp;菜鸟</td></tr>
+				</table>
+				</div>
+				<div style="float:left;">
+					<table  style=" border-spacing:15px " >
+						<tr><td><input type="radio" id = "setborder"  name = "isborder" value="1"  onclick="setborder()" checked="checked">&nbsp;&nbsp;YES</td></tr>
+						<tr><td><input type="radio" id = "clearborder" name = "isborder" value="0"  onclick="clearborder()"  >&nbsp;&nbsp;NO</td></tr>
+					</table>
+				</div>
+				<div id ="change" ><a href="javascript:change()">确定</a></div>
+			</div>
+			<div id = "maxscore">
+				历史最高分：
+				<div id = "maxtext">0</div>
+			</div>
+			<div class = "box" >
+				<canvas id = "cvs" width="450px" height="450px">
+				</canvas>
+				<div class = "foodbox">
+					<canvas id = "foodcvs" width="450px" height="450px">
+					</canvas>
+				</div>	
+			</div>
+			<div id = "op"> 
+				<div id = "newgame"><a href="javascript:newgame()"><span id="newgametext">NEW GAME</span></a></div>
+				<div id = "stop"><a href="javascript:stop()"><span id = "stoptext">STOP GAME</span></a></div>
+			</div>
+		</div>
+	</body>
+	<script src="js/main.js"></script>
+</html>
